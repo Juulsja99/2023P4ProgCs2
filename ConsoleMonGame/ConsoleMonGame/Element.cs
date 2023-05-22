@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace ConsoleMonGame
 {
-    internal class Skill
+    internal enum Element
     {
-        internal int damage;
-        internal int energyCost;
-        internal string name;
-        internal Element element;
+        Fire,
+        Earth,
+        Water,
+        Wind,
+        Physical
     }
 }
