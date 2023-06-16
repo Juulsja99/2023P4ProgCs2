@@ -12,6 +12,7 @@ namespace ConsoleMonGame
         internal int energy;
         internal string name;
         internal Element weakness;
+        private List<Skill> skills= new List<Skill>();
 
         internal void TakeDamage (int damage)
         {
