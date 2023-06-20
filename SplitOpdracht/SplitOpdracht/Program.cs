@@ -9,7 +9,7 @@
 
             string content = File.ReadAllText("C:\\Users\\Juuls\\Documents\\2023P4ProgCs2\\SplitOpdracht\\SplitOpdracht\\stringsplit.txt");
             string[] value = content.Split(':');
-            string keyvalue = value[i];
+            string keyvalue = value[0];
             Console.WriteLine(keyvalue);
             
 
