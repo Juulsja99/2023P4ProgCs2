@@ -14,10 +14,9 @@ namespace ConsoleMonGame
         public Element element { get; set; }
 
 
-        public Skill()
-        {
+        
 
-        }
+
 
         internal Skill(int damage, int energeyCost, string name, Element element)
         {
@@ -29,6 +28,10 @@ namespace ConsoleMonGame
             
         }
 
+        public Skill()
+        {
+
+        }
 
         internal void UseOn(ConsoleMon targetMon, ConsoleMon casterMon)
         {
