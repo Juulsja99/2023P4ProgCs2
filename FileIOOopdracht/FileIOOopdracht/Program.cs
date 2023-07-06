@@ -9,16 +9,25 @@ namespace FileIOOopdracht
 
             string[] content = File.ReadAllLines(@"C:\Users\Juuls\Documents\2023P4ProgCs2\FileIOOopdracht\FileIOOopdracht\Leesdezefile.txt");
 
+            DirectoryInfo output = new DirectoryInfo(@"C:\Users\Juuls\Documents\2023P4ProgCs2\FileIOOopdracht\FileIOOopdracht");
+            {
+                output.Create();
+            }
+            
+
+
             string[] text = new string[] { "nieuwe text" };
-            string file = @"C:\Users\Juuls\Documents\2023P4ProgCs2\FileIOOopdracht\FileIOOopdracht\FileIOOopdracht.csproj/mijnniewefile.txt";
 
-            File.WriteAllLines(file, text);
 
+
+            File.WriteAllLines(@"C:\Users\Juuls\Documents\2023P4ProgCs2\FileIOOopdracht\FileIOOopdracht\mijnnieuwefile.txt", text);
+
+           
 
 
             foreach (string line in content)
             {
-                Console.WriteLine(line);
+                Console.WriteLine(line, text);
             }
         }
     }
